@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Texas County COVID-19 Vaccines</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+    <!-- Our CSS -->
+<<<<<<< HEAD:Kris_Branch/Texas.html
+    <link rel="stylesheet" type="text/css" href="assets/css/TXstyle.css">
+=======
+    <link rel="stylesheet" type="text/css" href="Texas County Map/static/css/style.css">
+>>>>>>> cc21ef3864a3e4473518fd96519474561263a059:Kris_Branch/Texas County Map/Texas.html
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- API key -->
+<<<<<<< HEAD:Kris_Branch/Texas.html
+    <script type="text/javascript" src="assets/js/config.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/logic.js"></script>
+=======
+    <script type="text/javascript" src="Texas County Map/static/js/config.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="Texas County Map/static/js/logic.js"></script>
+>>>>>>> cc21ef3864a3e4473518fd96519474561263a059:Kris_Branch/Texas County Map/Texas.html
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">COVID Data</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="welcome.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="scatter.html">Vaccine Distribution</a>
+                        <a class="dropdown-item" href="lollypop.html">Lollipop Chart</a>
+                        <a class="dropdown-item" href="heatmap.html">USA Heatmap</a>
+                        <a class="dropdown-item" href="Texas.html">TX County Choropleth</a>
+
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    </nav>
+    <!-- The div where we will inject our map -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto"> -->
+    <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Texas COVID Vaccines
+              </a>
+                </li> -->
+    <!-- </ul>
+        </div>
+    </nav> -->
+    <hr style="color:lightgray; border-width: 3px;">
+    <div class="container">
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Filters</div>
+            <div class="card-body">
+                <select id="column">
+                    <option value="Vaccine Doses Administered">Doses Administered</option>
+                    <option value="Total Doses Allocated">Doses Allocated</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <hr style="color:lightgray; border-width: 3px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="maptitle"></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="mapcontainer">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

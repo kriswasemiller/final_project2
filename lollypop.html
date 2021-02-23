@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COVID Cases Interactive Scatter Plot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3Style.css">
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script> -->
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <script type="text/javascript" src="assets/js/lollypop.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">COVID Data</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="welcome.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="scatter.html">Vaccine Distribution</a>
+                        <a class="dropdown-item" href="lollypop.html">Lollipop Chart</a>
+                        <a class="dropdown-item" href="heatmap.html">USA Heatmap</a>
+                        <a class="dropdown-item" href="Texas.html">TX County Choropleth</a>
+
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>COVID-19 Cases by State</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="scatter">
+                    <!-- We append our chart here. -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="article">
+                    <h2>States and Covid Cases</h2>
+                    <p>We wanted to see if there was a relationship between COVID Cases and Vaccine distribution. This chart proves that states with more cases are receiving more vaccines (as shown in the Vaccine Distribution Chart). </p>
+
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <!-- <div id="footer">
+        <p>SMU Data Science BootCamp &copy; 2021</p> -->
+    <!-- </div> -->
+</body>
+
+</html>
